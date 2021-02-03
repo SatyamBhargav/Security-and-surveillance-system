@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="styleD.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <script src="linkers/linker.js"></script>
+    <title>Biometric Scanner</title>
+</head>
+<body>
+    <div class="area" >
+        <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>    
+            <a style="color: white" href="main.html"><button id="back"class="btn btn-info"><-Back</button></a>
+            <div class="maincontainer">
+                <h1>Biometric Scanner</h1>
+                <h2>Powered by Python</h2>
+                <h3>Rendered using Electron</h3>
+            </div>
+            <div class="container">
+                <div class="left-side">
+                    <img src="img/recognition.png" alt="Face Detection" width="100%" height="100%"><br>
+                    <button type="button" class="btn btn-primary" onclick="Bio_scan()">
+                        <p> Authentication </p>
+                    </button>
+                    <div class="who">
+                        <p>Who's face do you want to add?</p>
+                        <input id="name" type="text" class="form-control" placeholder="Name">
+                        <button id="add" type="submit" class="btn btn-primary mb-2" onclick="add_face()">Add a new face</button>
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </div>
+</body>
+</html>

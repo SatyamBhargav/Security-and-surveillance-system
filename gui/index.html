@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="design.css">
+    <script src="https://kit.fontawesome.com/eeeec49aaf.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <title>Login</title>
+    
+<body>
+    <div class="area" >
+        <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            <div class="container">
+                <div class="right-side">
+                    <img src="img/animation1.gif" width="100%" height="100%">
+                </div>
+                <div class="left-side">
+                    <img src="img/avatar1.svg">
+                    <form class="f1" name="myform" onsubmit="return check()" action="main.html">
+                        <h2>Welcome</h2>
+                        <div class="user">
+                            <div class="i">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="info">
+                                <h5 class="h1">Username</h5>
+                                <input name="username" class="input" type="text" size = "35">
+                            </div>
+                        </div>
+                        <div class="pass">
+                            <div class="i">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <div class="info1">
+                                <h5 class="h2">Password</h5>
+                                <input name="password" class="input" type="password" size="35">
+                            </div>
+                        </div>
+                        <!--<a href="#">Forgot Password?</a>-->
+                        <button type="submit" class="btn">Login</button>
+                    </form>
+                </div>
+            </div> 
+        </ul>
+    </div>
+    <script src="back.js"></script>   
+</body>
+</html>
