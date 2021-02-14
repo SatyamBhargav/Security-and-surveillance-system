@@ -38,12 +38,7 @@ function add_face()
       scriptPath: 'D:/Project/system/engine/Biometric_scanner',
       args : ["on",name]
     };
-    /*  
-    PythonShell.run('addface.py', options, function (err, results) {
-      if (err) throw err;
-      // results is an array consisting of messages collected during execution
-      console.log('results: %j', results);
-    });*/
+ 
     var face = new PythonShell("addface.py", options);
 
     face.end(function(err, code, message) {
@@ -52,34 +47,5 @@ function add_face()
         'We can now recognize your face',
         'success'
       )
-      /*swal("Face added!","We can now recognize your face","success")*/
     })
 }
-
-
-
-
-
-
-/*
-let {PythonShell} = require('python-shell')
-var path = require("path")
-
-
-function motion_detection()
-{
-    document.getElementById("motionD").value = "Hang on.."
-
-    var options = {
-        scriptPath : path.join(__dirname, 'D:/testing phase/system/engine/')
-        //pythonPath : 'C:/Users/msoft/AppData/Local/Programs/Python/Python38'
-    }
-
-    let face = new PythonShell("motion_detection.py", options);
-
-    face.end(function(err, code, message) {
-        document.getElementById("motionD").value = "Detection faces";
-    })
-
-}*/
-
