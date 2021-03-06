@@ -56,7 +56,7 @@ def check_dir():
 
  # this function will check for filename (csv_file) in the following dir (file_path)
  # if it will find the file it will return the full path of the file (cvs_file_full)
- # and if not it will creat on and the return the full path of the file
+ # and if not it will creat one and then return the full path of the file
 
 
  
